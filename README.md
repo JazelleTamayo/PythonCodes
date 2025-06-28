@@ -1,2 +1,0 @@
-# PythonCodes
-Python Diaries
