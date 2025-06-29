@@ -87,7 +87,7 @@ print(names)
 
 
 #Deleting using del
-#If the index is not specified it delete the lis lead to error
+#If the index is not specified it delete the list lead to error
 del names[0]
 print(names)
 
