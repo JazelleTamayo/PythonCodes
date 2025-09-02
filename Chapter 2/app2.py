@@ -8,5 +8,6 @@
 from os import system
 
 system("cls")
-name=input("Enter a string:")
+name:str = str(input("Enter a string:"))
+
 print(name)
