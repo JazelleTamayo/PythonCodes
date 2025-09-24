@@ -2,16 +2,16 @@
 Tamayo, Jazelle R.      BSIT-3B
 	dbhelper
 '''
-from os import system
+
 from sqlite3 import connect,Row
 
 database:str = "school.db"
 
 def getall(table:str)->None:
-    sql:str = f"SELECT * FROM `{table}`";
+    sql:str = f"SELECT * FROM '{table}'";
     conn:any = connect(database)
     conn.row_factory = Row
-    cursor:any = conn.cursor()
+    cursor;any = conn.cursor()
     cursor.execute(sql)
     data:list = cursor.fetchall()
     cursor.close()
@@ -21,13 +21,7 @@ def getall(table:str)->None:
 def main()->None:
     system('cls')
     data:list = getall('students')
-    for item in data:
-        print(item['idno'], end=" ")
-        print(item['lastname'], end=" ")
-        print(item['firstname'], end=" ")
-        print(item['course'], end=" ")
-        print(item['level'])
-    print()
+    print(data)
     
 if __name__ == "__main__":
     main()
