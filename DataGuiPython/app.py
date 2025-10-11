@@ -26,7 +26,7 @@ def get_by_id(idno: str):
 class StudentList:
     def __init__(self)->None:
         self.root = tk.Tk()
-        self.root.title('DURANO, Dennis BSIT-3 (19877) PYTHON')
+        self.root.title('TAMAYO, Jazelle BSIT-3 (19877) PYTHON')
         self.root.resizable(False,False)
         self.centerwindow()
         
@@ -218,3 +218,4 @@ def main()->None:
     
 if __name__=="__main__":
     main()
+
