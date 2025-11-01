@@ -1,0 +1,39 @@
+input[type="text"], input[type="number"] {
+        text-transform: uppercase;
+    }
+
+    #avatarPreview:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    }
+
+    .avatar-container {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+}
+
+#avatarPreview {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.avatar-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.avatar-container:hover .avatar-icon {
+    background-color: #f1f1f1;
+}
